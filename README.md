@@ -1,7 +1,7 @@
 # Credit Card Fraud & Transaction Risk Analytics for Banking
 
 
-This project analyzes 24.4 million credit card transactions to find patterns that predict fraud, patterns a typical rules-based system (one that just flags transactions over a dollar amount) would miss. Two of those patterns, how risky a merchant historically is, and whether a transaction is unusually large for that specific card, were added to a fraud-detection model. That alone raised the model's fraud recall from 54% to 64% and its ROC-AUC from 0.748 to 0.826, proving these SQL-derived signals genuinely improve detection rather than just producing interesting tables. The strongest individual signal, a dynamic spending threshold unique to each card, flagged only confirmed fraud in its top 20 results, with zero false positives.
+This project analyzes 24.4 million credit card transactions to find patterns that predict fraud, patterns a static, rule-based system would miss. Two of those patterns, how risky a merchant historically is, and whether a transaction is unusually large for that specific card, were added to a fraud-detection model. That alone raised the model's fraud recall from 54% to 64% and its ROC-AUC from 0.748 to 0.826, proving these SQL-derived signals genuinely improve detection rather than just producing interesting tables. The strongest individual signal, a dynamic spending threshold unique to each card, flagged only confirmed fraud in its top 20 results, with zero false positives.
 
 ## Data
 
